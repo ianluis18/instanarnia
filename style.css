@@ -1,0 +1,23 @@
+  :root { --papel:#efe6d0; --tinta:#1b1a18; --vermelho:#c9302c; --madeira:#8a5428; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#d8cbab; color:var(--tinta); font-family:"Caveat Brush", cursive; font-size:20px; }
+  .app { display:flex; flex-wrap:wrap; gap:24px; padding:20px; justify-content:center; align-items:flex-start; }
+  .preview { flex:0 1 520px; min-width:280px; }
+  canvas { width:100%; height:auto; display:block; border:3px solid var(--tinta); box-shadow:6px 6px 0 rgba(27,26,24,.35); background:var(--papel); touch-action:none; cursor:grab; }
+  canvas.arrastando { cursor:grabbing; }
+  .painel { flex:1 1 320px; max-width:520px; background:var(--papel); border:3px solid var(--tinta); padding:18px; box-shadow:6px 6px 0 rgba(27,26,24,.35); }
+  h2 { margin:0 0 8px; font-weight:400; font-size:26px; border-bottom:2px dashed var(--tinta); padding-bottom:4px; }
+  .bloco { margin-bottom:18px; }
+  label { display:block; margin:8px 0 3px; }
+  input[type=text] { width:100%; padding:8px 10px; font:inherit; background:#fbf6e8; border:2px solid var(--tinta); }
+  input[type=range] { width:100%; accent-color:var(--vermelho); }
+  button, .btn { font:inherit; cursor:pointer; background:#fbf6e8; color:var(--tinta); border:2px solid var(--tinta); padding:8px 12px; box-shadow:3px 3px 0 var(--tinta); }
+  button:active { transform:translate(2px,2px); box-shadow:1px 1px 0 var(--tinta); }
+  .atos { display:flex; flex-direction:column; gap:8px; }
+  .atos button { text-align:left; }
+  .atos button.ativo { background:var(--vermelho); color:#fbf6e8; }
+  .linha { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+  .check { display:flex; align-items:center; gap:8px; margin:8px 0; cursor:pointer; }
+  .check input { width:20px; height:20px; accent-color:var(--vermelho); }
+  #baixar { width:100%; font-size:24px; background:var(--vermelho); color:#fbf6e8; }
+  small { opacity:.75; }

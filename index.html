@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conheça Nosso Elenco</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Caveat+Brush&family=IM+Fell+English+SC&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Yesteryear&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="preview"><canvas id="tela" width="1080" height="1350"></canvas></div>
+
+  <div class="painel">
+    <div class="bloco">
+      <h2>Atos</h2>
+      <div class="atos" id="atos"></div>
+    </div>
+
+    <div class="bloco">
+      <h2>Foto</h2>
+      <input type="file" id="arquivo" accept="image/png,image/webp">
+      <small>PNG sem fundo. Arraste a foto na prévia para posicionar.</small>
+      <label for="tamanho">Tamanho</label>
+      <input type="range" id="tamanho" min="300" max="2200" value="900">
+      <div class="linha">
+        <button id="espelhar">Espelhar</button>
+        <button id="centralizar">Centralizar</button>
+        <button id="removerFoto">Remover foto</button>
+      </div>
+    </div>
+
+    <div class="bloco">
+      <h2>Textos</h2>
+      <label for="ator">Nome do ator</label>
+      <input type="text" id="ator" placeholder="Ian">
+      <label for="personagem">Nome do personagem</label>
+      <input type="text" id="personagem" placeholder="Taylor">
+      <label class="check"><input type="checkbox" id="usaDesc"> Adicionar mini-descrição</label>
+      <input type="text" id="desc" placeholder="Ex.: o leão Aslan" disabled>
+    </div>
+
+    <button id="baixar">Baixar imagem (1080×1350)</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
